@@ -1,0 +1,21 @@
+requestMatch: {
+  path: [
+      {regexp: "url-with-reg"}
+    ]
+}
+
+responseMatch : {
+    code_200 : {
+        dispatch : res200
+        statusCode : [
+            {is: 200}
+        ]
+    }
+}
+
+dispatch: {
+  res200: {
+    dispatchType: TEMPLATE
+    templatePath: "index/abcd.ftl"
+  }
+}

@@ -1,0 +1,15 @@
+@media (min-width: 1200px) {
+  .tile {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .tile {
+    width: 80px;
+    height: 80px;
+  }
+  .listview .list {
+    width: 100%;
+  }
+}
